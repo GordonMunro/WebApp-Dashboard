@@ -7,6 +7,7 @@
     <title>Web App</title>
 </head>
 <body>
+    <!-- header -->
     <header>
         <h1>Web App Tm</h1>
         <div>
@@ -19,6 +20,8 @@
         <h3>Student Name</h3>
         </div>
     </header>
+
+    <!-- navigation -->
     <nav>
         <a href="">
             <img src="svgs/home.svg" alt="home icon">
@@ -34,14 +37,18 @@
         </a>
     </nav>
     <main>
+
+        <!-- dashboard -->
         <div class="main-header">
             <h2 class="headline">Dashboard</h2>
             <div class="main-header-search">
                 <input type="search" placeholder="Search...">
             </div>
         </div>
+
         <!-- alert banner -->
         <div class="alert" id="alert"></div>
+
         <!-- line graph charts -->
         <section class="traffic">
             <div class="traffic-header">
@@ -55,23 +62,31 @@
             </div>
             <div class="widget-container-full">
                 <!-- element line graph will attach to -->
+                <img src="https://placeimg.com/640/480/any" alt="">
                 <canvas id="traffic-chart"></canvas>
             </div>
         </section>
+
         <!-- bar graph -->
-        <section>
+        <section class="daily">
             <h3>Daily Traffic</h3>
             <div id="widget-container-half">
+                <!-- element donut graph will attach to -->
+                <img src="https://placeimg.com/640/480/any" alt="">
                 <canvas id="daily-chart"></canvas>
             </div>
         </section>
+
         <!-- donut graph -->
-        <section>
+        <section class="mobile-users">
             <h3>Mobile Users</h3>
             <div id="widget-container-half">
+                <!-- element donut graph will attach to -->
+                <img src="https://placeimg.com/640/480/any" alt="">
                 <canvas id="mobile-users-chart"></canvas>
             </div>
         </section>
+
         <!-- social status -->
         <section>
             <h3>Social Status</h3>
@@ -109,6 +124,7 @@
             </div>
         </div>
         </section>
+
         <!-- new members widget -->
         <section class="members">
             <h3>New Members</h3>
@@ -153,30 +169,46 @@
                 <img src="images/member-1.jpg" class="profile-image" alt="member photo">
                 <div class="members-text">
                     <p>Victoria Chambers commented on <a href="#">WebApp's SEO Tips</a></p>
+                    <p>4 hours ago</p>
                 </div>
-                <p>4 hours ago</p>
             </div>
             <div class="members-container">
                 <img src="images/member-2.jpg" class="profile-image" alt="member photo">
                 <div class="members-text">
-                    <p>Dale Byrn liked the post <a href="#">Facebook's Changes for 2021</a></div>p>                  
+                    <p>Dale Byrn liked the post <a href="#">Facebook's Changes for 2021</a></p>
+                    <p>5 hours ago</p>                  
                 </div>
-                <p>5 hours ago</p>
             </div>
             <div class="members-container">
                 <img src="images/member-3.jpg" class="profile-image" alt="member photo">
                 <div class="members-text">
                     <p>Dawn Wood commented on <a href="#">Facebook's Changes for 2021</a></p>
+                    <p>5 hours ago</p>
                 </div>
-                <p>5 hours ago</p>
             </div>
             <div class="members-container">
                 <img src="images/member-4.jpg" class="profile-image" alt="member photo">
                 <div class="members-text">
                     <p>Dan Oliver posted <a href="#">WebApp's SEO Tips</a></p>
+                    <p>1 day ago</p>
                 </div>
-                <p>1 day ago</p>
             </div>
+        </section>
+        
+        <!-- messaging widget -->
+        <section class="message">
+            <h3>Message User</h3>
+            <form class="widget-container" action="index.html" method="POST">
+                <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                <textarea name="" id="messageField" placeholder="Message for user" class="form-area"></textarea>
+                <button class="button-primaryy" id="send">Send</button>
+            </form>
+        </section>
+
+        <!-- local settings widget -->
+        <section class="settings">
+            <h3>Settings</h3>
+
         </section>
     </main>
 </body>
