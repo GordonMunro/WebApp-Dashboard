@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
   }
 svg {
     fill: white;
@@ -87,10 +88,25 @@ header img {
 }
 header h1 {
     margin-right: auto;
+    font-weight: 400;
 }
 header svg {
-    margin-right: 3em;
+    margin-right: 2em;
+    margin-top: 1em;
 }
 header h3 {
     margin-right: 1em;
+    font-weight: 300;
+}
+#vertical-line {
+    height: 5em;
+    width: 2em;
+    border-left: 1px solid lightgrey;
+}
+#notifications {
+    
+}
+.bell {
+    display: flex;
+    flex-direction: row;
 }
