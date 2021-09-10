@@ -3,7 +3,7 @@ const alertBanner = document.getElementById("alert");
 alertBanner.innerHTML =
 `
 <div class="alert-banner">
-    <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
+    <p><strong>Alert:</strong> You have unread messages</p>
     <p class="alert-banner-close">x</p>
 </div>
 `;
@@ -22,6 +22,11 @@ let trafficData = {
         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500],
         backgroundColor: 'rgba(116, 119, 191, 0.3)',
         borderWidth: 1,
+        fill: {
+            target: 'origin',
+            above: 'rgba(99, 105, 189, 0.4)'
+          },
+          tension: .4
     }]
 };
 let trafficOptions = {
@@ -90,6 +95,7 @@ const mobileData = {
     }]
 };
 const mobileOptions = {
+    aspectRatio: 1.5,
     plugins: {
         legend: {
             position: 'right',

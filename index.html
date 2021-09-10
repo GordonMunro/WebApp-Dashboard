@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/toggle-switch.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0, 500;0,700;1,400&display=swap" rel="stylesheet">
     <title>Web App</title>
 </head>
 <body class="grid-container">
@@ -61,6 +61,7 @@
         <!-- dashboard -->
         <div class="main-header">
             <h2 class="headline">Dashboard</h2>
+            <div class="spacing-block"></div>
         </div>
 
         <!-- alert banner -->
@@ -69,9 +70,9 @@
         <!-- line graph charts -->
         <section class="traffic">
             <div class="traffic-header">
-                <h3>Traffic</h3>
+                <h3>TRAFFIC</h3>
                 <ul class="traffic-nav">
-                    <li class="traffic-nav-link">Hourly</li>
+                    <li class="traffic-nav-link hourly">Hourly</li>
                     <li class="traffic-nav-link">Daily</li>
                     <li class="traffic-nav-link active">Weekly</li>
                     <li class="traffic-nav-link">Monthly</li>
@@ -85,7 +86,7 @@
 
         <!-- bar graph -->
         <section class="daily">
-            <h3>Daily Traffic</h3>
+            <h3>DAILY TRAFFIC</h3>
             <div id="widget-container-half">
                 <!-- element donut graph will attach to -->
                 <canvas id="daily-chart"></canvas>
@@ -94,7 +95,7 @@
 
         <!-- donut graph -->
         <section class="mobile-users">
-            <h3>Mobile Users</h3>
+            <h3>MOBILE USERS</h3>
             <div id="widget-container-half">
                 <!-- element donut graph will attach to -->
                 
@@ -104,7 +105,7 @@
 
         <!-- social status -->
         <section class="social">
-            <h3>Social Status</h3>
+            <h3>SOCIAL STATS</h3>
         <div class="social-container">
             <div class="social-image">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,8 +113,8 @@
                 </svg>
             </div>
             <div class="social-text">
-                <p>Facebook</p>
-                <p>10,320</p>
+                <p class="social-name">Facebook</p>
+                <p class="social-numbers">10,320</p>
             </div>
         </div>
         <div class="social-container">
@@ -123,8 +124,8 @@
                 </svg>
             </div>
             <div class="social-text">
-                <p>Instagram</p>
-                <p>16,445</p>
+                <p class="social-name">Instagram</p>
+                <p class="social-numbers">16,445</p>
             </div>
         </div>
         <div class="social-container">
@@ -134,15 +135,15 @@
                 </svg>
             </div>
             <div class="social-text">
-                <p>Twitter</p>
-                <p>22,189</p>
+                <p class="social-name">Twitter</p>
+                <p class="social-numbers">22,189</p>
             </div>
         </div>
         </section>
 
         <!-- new members widget -->
         <section class="members">
-            <h3>New Members</h3>
+            <h3>NEW MEMBERS</h3>
             <div class="members-container">
                 <img src="images/member-1.jpg" class="profile-image" alt="member photo">
                 <div class="members-text">
