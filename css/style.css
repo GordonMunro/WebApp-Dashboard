@@ -263,13 +263,15 @@ header h3 {
     font-weight: 300;
 }
 /* Members */
-.members h3 {
+.members h3,
+.recent-activity h3 {
     margin: 1em 0 .5em 1em;
     font-weight: 700;
     font-size: .8em;
     align-self: flex-start;
 }
-.members {
+.members,
+.recent-activity {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,15 +282,21 @@ header h3 {
     height: 4.5em;
     width: 4.5em;
 }
+.members a {
+    color: rgb(136, 140, 202);
+}
 .members-container {
     border-bottom: 2px solid rgba(209, 206, 206, 0.5);
-    padding-bottom: .5em;
+    padding: 1em;
     width: 90%;
 }
 .members div:last-child {
     width: 100%;
 }
-
+.recent-activity a {
+    color: black;
+    font-weight: 700;
+}
 
 select {
     width: 90%;
