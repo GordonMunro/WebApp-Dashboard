@@ -213,18 +213,19 @@
         
         <!-- messaging widget -->
         <section class="message">
-            <h3>Message User</h3>
+            <h3>MESSAGE USER</h3>
             <form class="widget-container" action="index.html" method="POST">
                 <input type="text" placeholder="Search for user" class="form-field" id="userField">
                 <textarea name="" id="messageField" placeholder="Message for user" class="form-area"></textarea>
-                <button class="button-primaryy" id="send">Send</button>
+                <button class="button-primary" id="send">Send</button>
             </form>
         </section>
 
         <!-- local settings widget -->
         <section class="settings">
-            <h3>Settings</h3>
+            <h3>SETTINGS</h3>
             <!-- toggle switches -->
+            <div class="switch">
             <label class="switch-light switch-ios" style="width: 100px" onclick="">
                 <input type="checkbox">
               
@@ -238,7 +239,9 @@
                   <a></a>
                 </span>
               </label>
+            </div>
 
+              <div class="switch">
               <label class="switch-light switch-ios" style="width: 100px" onclick="">
                 <input type="checkbox">
               
@@ -252,7 +255,8 @@
                   <a></a>
                 </span>
               </label>
-        
+            </div>
+
               <select class="form-field" id="timezone">
                     <option disabled selected>Select a Timezone</option>
                     <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
